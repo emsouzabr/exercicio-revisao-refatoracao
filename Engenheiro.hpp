@@ -11,5 +11,6 @@ class Engenheiro : public Empregado {
     public:
     Engenheiro(std::string nome, double salarioHora, int projetos);
     int getProjetos();
+};
 
 #endif
