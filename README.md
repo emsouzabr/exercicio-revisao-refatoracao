@@ -7,3 +7,13 @@ Você deve criar uma cópia local desse repositório, fazer as alterações que 
 No seu pull request faça uma lista/descrição detalhada das possíveis soluções que você utilizou.
   
 Dica: Utilize o catálogo com sugestões de refatoração (https://refactoring.com/catalog/).
+
+ALTERAÇÕES:
+
+1. Makefile;
+2. extrair métodos;
+3. substituição de números mágicos;
+4. encapsulamento;
+5. criação de Empregado.cpp, Engenheiro.hpp, Vendedor.hpp;
+6. criação de funções específicas de impressão para Engenheiro;
+7. criação de funções específicas de impressão para Vendedor;

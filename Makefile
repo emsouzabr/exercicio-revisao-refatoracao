@@ -1,21 +1,24 @@
 OBJS	= main.o Empregado.o Engenheiro.o Vendedor.o 
-SOURCE	= main.cpp Engenheiro.cpp Vendedor.cpp 
-HEADER	= Empregado.hpp
+SOURCE	= main.cpp Empregado.cpp Engenheiro.cpp Vendedor.cpp 
+HEADER	= Empregado.hpp Engenheiro.hpp Vendedor.hpp
 OUT		= vpl
 CC		= g++
-FLAGS	 = -g -c -Wall  -stdlib=libc++ #-stdlib=libstdc++
+FLAGS	 = -g -c -Wall -std=c++11 #-stdlib=libc++ #-stdlib=libstdc++
 LFLAGS	 =
+
+
 
 all: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT)
+	./$(OUT)
 
 main.o: main.cpp
 	$(CC) $(FLAGS) main.cpp
 
 Empregado.o: Empregado.cpp
-	$(CC) $(FLAGS) Empregado.cpp 
+	$(CC) $(FLAGS) Empregado.cpp
 
-VeEngenheiroc1D.o: Engenheiro.cpp
+Engenheiro.o: Engenheiro.cpp
 	$(CC) $(FLAGS) Engenheiro.cpp
 
 Vendedor.o: Vendedor.cpp
